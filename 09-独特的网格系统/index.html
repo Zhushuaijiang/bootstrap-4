@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>title</title>
+    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        div[class^=col]{
+            box-sizing: border-box;
+            background: wheat;
+            border: 1px solid #000;
+        }
+        .container{
+            overflow: hidden;
+        }
+        h3{
+            text-align: center;
+            margin:  0 auto;
+        }
+    </style>
+</head>
+<body>
+<!--默认-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            One of three columns
+        </div>
+        <div class="col-sm">
+            One of three columns
+        </div>
+        <div class="col-sm">
+            One of three columns
+        </div>
+    </div>
+</div>
+<!--等宽 例如，下面是适用于所有的设备和视口，从两个网格布局xs来xl。为您需要的每个断点添加任意数量的无单位类，每列的宽度相同-->
+<h3>等宽 例如，下面是适用于所有的设备和视口，从两个网格布局xs来xl。为您需要的每个断点添加任意数量的无单位类，每列的宽度相同-。</h3>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            1 of 2
+        </div>
+        <div class="col">
+            2 of 2
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col">
+            2 of 3
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</div>
+<!--兼容Safari flexbox错误-->
+<div class="container">
+    <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+    </div>
+</div>
+<!--设置一个列宽
+flexbox网格列的自动布局还意味着您可以设置一列的宽度，并让兄弟列自动调整其大小。您可以使用预定义的网格类（如下所示），网格混合或内联宽度。请注意，无论中心列的宽度如何，其他列都将调整大小。-->
+<h3>设置一个列宽 flexbox网格列的自动布局还意味着您可以设置一列的宽度，并让兄弟列自动调整其大小。您可以使用预定义的网格类（如下所示），网格混合或内联宽度。请注意，无论中心列的宽度如何，其他列都将调整大小。</h3>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-6">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-5">
+            2 of 3 (wider)
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</div>
+<!--可变宽度内容
+使用col-{breakpoint}-auto类根据内容的自然宽度调整列的大小。-->
+<!--justify-content-md-center    内容居中-->
+<h3>可变宽度内容使用col-{breakpoint}-auto类根据内容的自然宽度调整列的大小  justify-content-md-center    内容居中-</h3>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            1 of 3
+        </div>
+        <div class="col-md-auto">
+            Variable width content11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+        </div>
+        <div class="col col-lg-2">
+            3 of 3
+        </div>
+    </div>
+</div>
+<!--对于从最小设备到最大设备相同的网格，请使用.col和.col-*类。当需要特别大小的列时，请指定编号的类; 否则，请随时坚持下去.col-->
+<h3>于从最小设备到最大设备相同的网格，请使用.col和.col-*类。当需要特别大小的列时，请指定编号的类; 否则，请随时坚持下去.col-</h3>
+<div class="container">
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+    <div class="row">
+        <div class="col-8">col-8</div>
+        <div class="col-4">col-4</div>
+    </div>
+</div>
+<!--堆叠到水平
+使用一组.col-sm-*类，您可以创建一个基本的网格系统，它开始堆叠并在小断点处变为水平（sm）。-->
+<h3>叠到水平 使用一组.col-sm-*类，您可以创建一个基本的网格系统，它开始堆叠并在小断点处变为水平（sm）。</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">col-sm-8</div>
+        <div class="col-sm-4">col-sm-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+        <div class="col-sm">col-sm</div>
+    </div>
+</div>
+
+<!--连连看-->
+<h3>连连看</h3>
+<div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+    </div>
+</div>
+<!--垂直对齐 -->
+<h3>垂直对齐</h3>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+        <div class="col">
+            One of three columns
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col align-self-start">
+            One of three columns2
+        </div>
+        <div class="col align-self-center">
+            One of three columns2
+        </div>
+        <div class="col align-self-end">
+            One of three columns3
+        </div>
+    </div>
+</div>
+<!--水平对齐-->
+<h3>水平对齐</h3>
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4">
+            One of two columns
+        </div>
+        <div class="col-4">
+            One of two columns
+        </div>
+    </div>
+</div>
+<!--列包装 如果在一行中放置超过12列，则每组额外列将作为一个单元包裹到新行上。-->
+<h3>列包装 如果在一行中放置超过12列，则每组额外列将作为一个单元包裹到新行上</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-9">.col-9</div>
+        <div class="col-4">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+        <div class="col-6">.col-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+</div>
+
+<!--列断裂 将列拆分为flexbox中的新行需要一个小的hack：添加一个元素，width: 100%无论您想将列包装到新行。通常这是通过多个.rows 来完成的，但并非每种实现方法都可以解释这一点。-->
+<h3>列断裂，强制换行，哈哈， 将列拆分为flexbox中的新行需要一个小的hack：添加一个元素，width: 100%无论您想将列包装到新行。通常这是通过多个.rows 来完成的，但并非每种实现方法都可以解释这一点。</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+    </div>
+</div>
+<!--使用.order-类来控制内容的可视顺序。这些类是响应式的，因此您可以设置orderby断点（例如，.order-1.order-md-2）。包括支持1通过12所有五格层。-->
+<h3>排序</h3>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            首先，但无序
+        </div>
+        <div class="col order-12">
+            第三，但首先
+        </div>
+        <div class="col order-1">
+            第二，但最后
+        </div>
+    </div>
+</div>
+<!--偏移列 响应.offset-网格类和边际效用。网格类的大小可以匹配列，而边距对于偏移宽度可变的快速布局更有用。使用.offset-md-*类将列向右移动。这些类按*列增加列的左边距。例如，.offset-md-4移动.col-md-4四列。-->
+<h3>偏移列</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4 offset-sm-4">.col-sm-4 .offset-sm-4</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3 offset-sm-3">.col-sm-3 .offset-sm-3</div>
+        <div class="col-sm-3 offset-sm-3">.col-sm-3 .offset-sm-3</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">.col-sm-6 .offset-sm-3</div>
+    </div>
+</div>
+
+<!--Margin utilities-->
+<h3>Margin utilities</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+        <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-auto mr-md-auto">.col-auto .mr-auto</div>
+        <div class="col-auto">.col-auto</div>
+    </div>
+</div>
+
+<!--Nesting 嵌套-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            Level 1: .col-sm-9
+            <div class="row">
+                <div class="col-8 col-sm-6">
+                    Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                    Level 2: .col-4 .col-sm-6
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bootstrap-4.3.1-dist/others/jquery-3.3.1.slim.min.js"></script>
+<script src="../bootstrap-4.3.1-dist/others/popper.min.js"></script>
+<script src="../bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+</body>
+</html>
