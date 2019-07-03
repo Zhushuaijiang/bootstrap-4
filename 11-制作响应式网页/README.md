@@ -10,8 +10,8 @@
 
      --html-------------
 
-  <div class="row md-3">
-      <div class="col-6 bg-sucess">Hello</div>
+  <div class="row mb-3">
+      <div class="col-6 bg-success">Hello</div>
   </div>
   <div class="row mb-3">
       <div class="col-xl-12 col-lg-10 col-md-8 col-sm-4 col-6 bg-warning">hello2</div>

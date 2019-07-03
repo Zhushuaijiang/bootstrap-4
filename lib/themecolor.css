@@ -1,0 +1,44 @@
+.game_red {
+    background-color: crimson !important;
+}
+
+.game_orangered {
+    background-color: orangered !important;
+}
+
+.tc_bilibili {
+    background-color: #07ABEA !important;
+    border: #07ABEA 1px solid;
+}
+
+.tc_bootstrap4 {
+    background-color: #563d7c !important;
+}
+
+.tc_vuejs {
+    background-color: #42b983 !important;
+}
+
+.tc_postgresql {
+    background-color: #316192 !important;
+}
+
+.tc_sails {
+    background-color: #11ACC3 !important;
+}
+
+.tc_java {
+    background-color: #F80001 !important;
+}
+
+.tc_kotlin {
+    background-color: #456DA2 !important;
+}
+
+.tc_es6 {
+    background-color: goldenrod !important;
+}
+
+.tc_git {
+    background-color: #F24F29 !important;
+}

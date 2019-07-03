@@ -1,0 +1,80 @@
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.myheader {
+    background: url(/images/header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*
+.card {
+    min-height: 420px;
+}
+*/
+.card_default {
+    min-height: 420px;
+}
+
+.card220 {
+    min-height: 220px;
+}
+.card270 {
+    min-height: 270px;
+}
+.card320 {
+    min-height: 320px;
+}
+.card370 {
+    min-height: 370px;
+}
+.card_news {
+    max-height: 6em;
+    position: relative;
+    overflow: hidden;
+    color: #6a6a6a;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
